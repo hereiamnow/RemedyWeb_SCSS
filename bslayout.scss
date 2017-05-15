@@ -1,0 +1,47 @@
+@import 'base/variables';
+@import 'imports/footer';
+@import 'imports/img-sprite';
+@import 'imports/fonts_icomoon';
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+	position   : relative;
+	min-height : 100%;
+}
+body {
+	/* Margin bottom by footer height */
+	margin-bottom : 60px;
+}
+.navbar-nav li a {
+	line-height : 50px;
+}
+#navbar > ul {
+	font-size      : 12px;
+	font-weight    : bold;
+	letter-spacing : 1px;
+	margin         : 0;
+}
+#navbar {
+	text-transform : uppercase;
+}
+#business .navbar-default {
+	background-color : $color_casablanca_approx;
+	border-color     : $gallery;
+}
+#business .navbar-default .navbar-nav > li > a {
+	color : $white;
+}
+#business .navbar-brand {
+	padding-top : 10px;
+}
+#business .brand_Z {
+	display         : block;
+	-moz-box-sizing : border-box;
+	box-sizing      : border-box;
+	background      : url(/images/remedy-business.png) no-repeat;
+	width           : 135px; /* Width of new image */
+	height          : auto; /* Height of new image */
+	padding-left    : 135px; /* Equal to width of new image */
+}
+

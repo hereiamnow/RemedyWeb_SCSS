@@ -1,0 +1,609 @@
+@import 'base/variables';
+
+//colors
+$color_storm_dust_approx : #666;
+$white : #fff;
+$color_ripe_lemon_approx : #f2cd13;
+$color_tiber_approx : #00333e;
+$color_keppel_approx : #44b09b;
+$color_flame_pea_approx : #d65848;
+$black : #000;
+$color_biscay_approx : #1e2c5c;
+$color_picton_blue_approx : #3abeee;
+$color_tulip_tree_approx : #f3b844;
+$color_madison_approx : #0d1f61;
+$color_vivid_violet_approx : #963293;
+$color_razzle_dazzle_rose_approx : #ff22ed;
+
+//fonts
+$font_0 : 'Monsterrat Bold';
+$font_1 : 'Klinic Slab';
+$font_2 : 'Gotham HTF';
+
+html {
+	box-sizing : border-box;
+}
+
+
+body {
+	color   : $color_storm_dust_approx;
+	margin  : 0px;
+	padding : 0px;
+}
+
+
+.word-break {
+	word-break    : break-all;
+	display       : inline-block;
+	padding-right : 3em;
+}
+
+
+.color-base {
+	color : $color_storm_dust_approx;
+}
+
+
+.color-light {
+	color : $white;
+}
+
+
+.color-primary,
+.color-primary:hover {
+	color : $color_ripe_lemon_approx;
+}
+
+
+.color-secondary {
+	color : $color_tiber_approx;
+}
+
+
+.color-success {
+	color : $color_keppel_approx;
+}
+
+
+.color-alert {
+	color : $color_flame_pea_approx;
+}
+
+
+.txt-medium {
+	font-size : 18px;
+}
+
+
+.txt-center {
+	text-align : center;
+	display    : block;
+}
+
+
+.inline {
+	display : inline-block !important;
+}
+
+
+.table-responsive {
+	overflow-x : auto;
+}
+
+
+p,
+.para {
+	font-size   : 16px;
+	line-height : 1.6em;
+	white-space : normal;
+	display     : block;
+}
+
+
+/* Animates page contents when the page is resized */
+ul,
+ol,
+dl {
+	font-size : inherit;
+}
+
+
+address {
+	font-style : normal;
+}
+
+
+address label {
+	font-weight : bold;
+}
+
+
+a, a:hover {
+	color           : inherit;
+	text-decoration : none;
+}
+
+
+b,
+strong {
+	font-family : $font_0;
+	font-weight : normal;
+}
+
+
+i,
+em {
+	font-style : italic;
+}
+
+
+hr {
+	display    : block;
+	border     : none;
+	border-top : 1px $color_mine_shaft_approx solid;
+}
+
+
+img {
+	max-width : 100%;
+}
+
+
+h2 {
+	font-size   : 2.4em;
+	line-height : 1.1em;
+}
+
+
+h2.primary {
+	font-family : $font_1;
+	font-size   : 2.4em;
+	font-weight : 300;
+	color       : $color_storm_dust_approx;
+	margin      : 0 0 1.5em 0;
+}
+
+
+a {
+	outline         : none;
+	text-decoration : none;
+	color           : inherit;
+}
+
+
+a:focus {
+	outline : none;
+}
+
+
+.btn:hover {
+	color : $white;
+}
+
+
+.btn-primary {
+	height         : auto;
+	font-size      : 18px;
+	text-transform : uppercase;
+	line-height    : 1em;
+	background     : $color_biscay_approx;
+	padding        : 0.7em 1.1em;
+}
+
+
+.btn-secondary {
+	height         : auto;
+	font-size      : 18px;
+	text-transform : uppercase;
+	line-height    : 1em;
+	background     : $color_picton_blue_approx;
+	padding        : 0.7em 1.1em;
+}
+
+
+.btn-primary:hover {
+	background : $color_biscay_approx;
+}
+
+
+#header {
+	background : $color_tulip_tree_approx;
+}
+
+
+#header .nav-drop ul {
+	background : $color_tulip_tree_approx;
+}
+
+
+#header .nav-drop ul li a {
+	color : $white;
+}
+
+
+#header .nav-drop ul li a:hover {
+	color : $color_biscay_approx;
+}
+
+
+.nav-opener::before, .nav-opener::after, .nav-opener span {
+	background : $white none repeat scroll 0 0;
+}
+
+
+#header .btn {
+	background : $color_biscay_approx;
+}
+
+
+#main {
+	font-size   : 10px;
+	padding-top : 0;
+}
+
+
+#banner {
+	text-align : center;
+	background : $color_tulip_tree_approx;
+	padding    : 84px 0 60px 0;
+}
+
+
+#banner h1 {
+	font-size   : 4em;
+	color       : $white;
+	line-height : 1.1em;
+	margin      : 0 0 1em 0;
+	padding     : 0;
+}
+
+
+#banner p {
+	color       : $color_madison_approx;
+	line-height : 1.8em;
+	margin      : 0 0 2.2em 0;
+}
+
+
+#banner img {
+	display : block;
+	margin  : 0 auto 2em auto;
+}
+
+
+.main-carousel2 .icon {
+	cursor : pointer;
+}
+
+
+.main-carousel2 .btn-prev,
+.main-carousel2 .btn-next {
+	top : 55%;
+}
+
+
+.main-carousel2.primary .btn-prev {
+	left : 64px;
+}
+
+
+.main-carousel2.primary .btn-next {
+	right : 64px;
+}
+
+
+ul.features {
+	width      : 100%;
+	max-width  : 720px;
+	list-style : none;
+	margin     : 0 auto;
+	padding    : 0;
+}
+
+
+ul.features li {
+	width          : 30%;
+	max-width      : 175px;
+	text-align     : center;
+	display        : inline-block;
+	vertical-align : top;
+	margin         : 0 0 1em 0;
+}
+
+
+ul.features li img {
+	display : block;
+	margin  : 0 auto 2em auto;
+}
+
+
+ul.features li:nth-child(2) {
+	margin : 0 13% 1em 13%;
+}
+
+
+.main-carousel2 .btn-prev {
+	left : 0;
+}
+
+
+.main-carousel2 .btn-next {
+	right : 0;
+}
+
+
+.main-frame {
+	line-height : 1em;
+}
+
+
+.main-frame.highlight {
+	padding : 30px 0;
+}
+
+
+.main-frame.cello {
+	background : $color_biscay_approx;
+}
+
+
+.main-frame.blue {
+	background : $color_picton_blue_approx;
+}
+
+
+.main-frame.plum {
+	background : $color_vivid_violet_approx;
+}
+
+
+.main-frame.note h2 {
+	color      : $white;
+	text-align : center;
+	margin     : 0;
+	padding    : 1.5em 0;
+}
+
+
+.featured-section {
+	width      : 100%;
+	max-width  : 992px;
+	overflow-x : hidden;
+	color      : $white;
+	display    : table;
+	margin     : 0 auto;
+}
+
+
+.featured-section .caption {
+	width          : 350px;
+	display        : table-cell;
+	vertical-align : middle;
+	padding        : 30px 0;
+}
+
+
+.featured-section .caption .block {
+	padding : 0 15px;
+}
+
+
+.featured-section .caption:last-child .block {
+	padding : 0 15px 0 50px;
+}
+
+
+.featured-section .caption h2 {
+	font-size   : 2.4em;
+	line-height : 1.5em;
+}
+
+
+.featured-section .caption h2 em {
+	/*font-size   : 40px;*/
+	font-size   : 1.7em;
+	font-weight : 600;
+	font-style  : normal;
+	display     : block;
+}
+
+
+.featured-section .figure {
+	display     : table-cell;
+	line-height : 0;
+	position    : relative;
+}
+
+
+.featured-section .figure img {
+	width : 100%;
+}
+
+
+.featured-section .figure strong {
+	width       : 100%;
+	font-family : $font_2;
+	font-size   : 24.8em;
+	font-weight : 600;
+	text-align  : center;
+	display     : block;
+	position    : absolute;
+	top         : 50%;
+}
+
+
+.main-frame.plum .featured-section .figure strong {
+	color : $color_razzle_dazzle_rose_approx;
+}
+
+
+@media only screen and (min-width : 1400px) {
+	.featured-section {
+		width  : 1020px;
+		float  : none;
+		margin : 0 auto;
+	}
+}
+
+
+@media only screen and (max-width : 991px) {
+	.btn-primary,
+	.btn-secondary {
+		font-size : 17px;
+	}
+
+	#main {
+		font-size : 9px;
+	}
+
+	#banner {
+		padding : 80px 0 40px;
+	}
+
+	.featured-section .figure strong {
+		font-size : 20em;
+	}
+
+	p,
+	.para {
+		font-size : 15px;
+	}
+
+	.txt-medium {
+		font-size : 17px;
+	}
+
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+	.featured-section .figure img {
+		min-width  : 536px;
+		min-height : 282px;
+	}
+
+	.featured-section .figure:last-child img {
+		margin-right : -100px;
+	}
+
+	.featured-section .figure:first-child img {
+		margin-left : -100px;
+	}
+}
+
+
+@media only screen and (max-width : 767px) {
+	.txt-medium {
+		font-size : 16px;
+	}
+
+	.xs-hide {
+		display : none;
+	}
+
+	p,
+	.para {
+		font-size : 14px;
+	}
+
+	.btn-primary,
+	.btn-secondary {
+		font-size : 15px;
+	}
+
+	#main {
+		font-size : 8px;
+	}
+
+	#banner {
+		padding : 54px 10px 40px;
+	}
+
+	#banner h1 {
+		font-size   : 3.3em;
+		line-height : 1.2em;
+	}
+
+	.main-carousel2 .slide {
+		height         : auto;
+		padding-bottom : 50px;
+	}
+
+	ul.features li {
+		width   : 100%;
+		display : block;
+		margin  : 0 auto 4em auto;
+		&:nth-child(2) {
+			margin : 0 auto 4em auto;
+		}
+	}
+
+	/*	ul.features li {
+			width   : 100%;
+			display : block;
+			margin  : 0 auto 4em auto;
+		}
+
+		ul.features li:nth-child(2) {
+			margin : 0 auto 4em auto;
+		}
+		.featured-section {
+			width : 100%;
+		}
+
+		.featured-section .caption {
+			width   : 100%;
+			display : table-footer-group;
+		}
+
+		.featured-section .caption .block {
+			padding : 30px 15px;
+		}
+
+		.featured-section .caption:last-child .block {
+			padding : 30px 15px;
+		}
+
+		.featured-section .figure {
+			width   : 100%;
+			display : table-header-group;
+		}
+
+		.featured-section .figure img {
+			min-height : 0;
+		}
+
+		.featured-section .figure strong {
+			font-size : 16em;
+		}*/
+
+	.featured-section {
+		width : 100%;
+		.caption {
+			width   : 100%;
+			display : table-footer-group;
+			.block {
+				padding : 30px 15px;
+			}
+			&:last-child .block {
+				padding : 30px 15px;
+			}
+		}
+		.figure {
+			width   : 100%;
+			display : table-header-group;
+			img {
+				min-height : 0;
+			}
+			strong {
+				font-size : 16em;
+			}
+		}
+	}
+}
+
+
+
+
+
+

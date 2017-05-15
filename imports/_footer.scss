@@ -1,0 +1,189 @@
+/**
+ * Created by Shawn Miller on 4/28/2017
+ * Filename: _footer.css
+ * Path: /css/imports/_footer.css
+ * Version: 1.0
+ * Description: A brief description of the Stylesheet.
+ */
+
+@import '../base/variables';
+
+#footer .footer-nav ul,
+#footer .social-networks {
+	margin     : 0;
+	padding    : 0;
+	list-style : none;
+}
+
+#footer .container:after,
+#footer .subscribe-form .row:after {
+	content : "";
+	display : block;
+	clear   : both;
+}
+
+#footer {
+	font-size  : 10px;
+	background : #21282a;
+	padding    : 48px 0;
+}
+
+#footer .container {
+	max-width : 1260px;
+	margin    : 0 auto;
+	padding   : 0 15px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 350px;
+
+}
+
+/*
+    Footer Primary Section
+*/
+#ft-primary-section {
+	text-align : center;
+}
+
+/*
+    Footer Social Links
+*/
+.ft-social-links a {
+	color       : #39bded;
+	text-indent : -9999px;
+	cursor      : pointer;
+	display     : inline-block;
+	margin      : 0 7.5px 30px 7.5px;
+}
+
+/*
+    Footer Logo
+*/
+.ft-logo img {
+	width  : 168px;
+	margin : 0 0 4.5em 0;
+}
+
+/*
+    Footer Contact Info
+*/
+ul.ft-contact-info {
+	list-style : none;
+	margin     : 0 0 6em 0;
+	padding    : 0;
+}
+
+ul.ft-contact-info li {
+	line-height    : 2em;
+	display        : inline-block;
+	vertical-align : bottom;
+	border-left    : 3px #3abeee solid;
+	margin         : 0;
+	padding        : 0;
+}
+
+ul.ft-contact-info li:first-child {
+	border-left : 0;
+}
+
+ul.ft-contact-info a {
+	font-size       : 2.2em;
+	font-weight     : 600;
+	color           : #3abeee;
+	text-decoration : none;
+	display         : inline-block;
+	vertical-align  : bottom;
+	padding         : 0 18px;
+}
+
+/*
+    Footer Menu
+*/
+ul.ft-menu {
+	width       : 100%;
+	font-size   : 1.5em;
+	font-weight : 400;
+	list-style  : none;
+	display     : table;
+	margin      : 0;
+	padding     : 0;
+}
+
+ul.ft-menu > li {
+	width   : 39%;
+	display : table-cell;
+}
+
+ul.ft-menu > li.left-col {
+	text-align : left;
+}
+
+ul.ft-menu > li.right-col {
+	text-align : right;
+}
+
+ul.ft-menu > li > ul {
+	width      : 100%;
+	list-style : none;
+	margin     : 0;
+	padding    : 0;
+}
+
+ul.ft-menu > li > ul > li {
+	display : inline-block;
+	padding : 0 1.5%;
+}
+
+ul.ft-menu > li > ul > li > a {
+	color           : #838383;
+	text-decoration : none;
+	text-transform  : uppercase;
+}
+
+.footercontact {
+	float       : right;
+	clear       : right;
+	text-align  : right;
+	line-height : .5em;
+	padding-top : 15px;
+}
+
+@media only screen and (max-width : 991px) {
+	#footer {
+		font-size : 7px;
+	}
+
+	.ft-social-links a {
+		transform : scale(0.9, 0.9);
+	}
+
+	.ft-logo img {
+		width : 140px;
+	}
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1010px) {
+	ul.ft-menu {
+		font-size : 1.4em;
+	}
+}
+
+@media only screen and (max-width : 767px) {
+	ul.ft-contact-info > li {
+		border : 0;
+	}
+
+	ul.ft-menu > li.right-col {
+		text-align : left;
+	}
+
+	ul.ft-menu > li > ul > li {
+		display : block;
+		padding : 0;
+	}
+}

@@ -1,0 +1,112 @@
+/**
+ * Created by Shawn Miller on 4/28/2017
+ * Filename: _intro-frame.css
+ * Path: /css/imports/_intro-frame.css
+ * Version: 1.0
+ * Description: A brief description of the Stylesheet.
+ */
+
+@import '../base/variables';
+
+.pediatrics .intro-frame {
+	background-color : #4fc438 !important;
+}
+
+.pediatrics .intro-frame .main-title {
+	max-width : 744px;
+	margin    : 0 auto 0px;
+}
+
+.intro-frame {
+	padding          : 56px 0 79px;
+	background-color : #37c1f0;
+}
+
+.intro-frame .main-title {
+	max-width : 644px;
+	margin    : 0 auto 40px;
+}
+
+.intro-frame .remedy-info {
+	max-width  : 760px;
+	margin     : 0 auto;
+	text-align : center;
+}
+
+.intro-frame .remedy-info .columns {
+	font-size      : 0;
+	line-height    : 0;
+	letter-spacing : -4px;
+	margin         : 0 -48px;
+	overflow       : hidden;
+}
+
+.intro-frame .remedy-info .col {
+	font-size      : 16px;
+	line-height    : 1.948;
+	letter-spacing : normal;
+	display        : inline-block;
+	vertical-align : top;
+	width          : 33.33%;
+	padding        : 0 48px;
+}
+
+.intro-frame .remedy-info .image-holder {
+	white-space   : nowrap;
+	height        : 190px;
+	margin-bottom : 35px;
+}
+
+.intro-frame .remedy-info .image-holder:after {
+	display        : inline-block;
+	vertical-align : middle;
+	content        : "";
+	width          : 1px;
+	height         : 100%;
+}
+
+.intro-frame .remedy-info .image-holder img {
+	display        : inline-block;
+	vertical-align : middle;
+	white-space    : normal;
+}
+
+.intro-frame .remedy-info h2 {
+	font-size      : 16px;
+	line-height    : 19px;
+	font-weight    : normal;
+	letter-spacing : 1px;
+	margin         : 0;
+}
+
+@media (max-width : 767px) {
+
+	.intro-frame {
+		padding : 23px 0 63px;
+	}
+
+	.intro-frame .main-title {
+		margin-bottom : 53px;
+	}
+
+	.intro-frame .remedy-info .col {
+		width       : 100%;
+		display     : block;
+		line-height : 19px;
+	}
+
+	.intro-frame .remedy-info .col + .col {
+		margin-top : 36px;
+	}
+
+	.intro-frame .remedy-info .image-holder {
+		margin-bottom : 18px;
+	}
+
+	.intro-frame .remedy-info h2 {
+		font-size   : 14px;
+		line-height : 19px;
+		padding     : 0 16px;
+	}
+
+}

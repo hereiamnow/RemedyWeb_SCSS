@@ -1,0 +1,143 @@
+/**
+ * Created by Shawn Miller on 4/28/2017
+ * Filename: _browser-overrides
+ * Path: /css/imports/_browser-overrides.scss
+ * Version: 1.0
+ * Description: A brief description of the Stylesheet.
+ */
+
+@import '../base/variables';
+
+/**
+ * 1. Set default font family to sans-serif.
+ */
+
+html {
+	font-family : 'Gotham HTF', sans-serif; /* 1 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+	margin : 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+hgroup, summary {
+	display : block;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active, a:hover {
+	outline : 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+	overflow : auto;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button {
+	color  : inherit;   /* 1 */
+	font   : inherit;   /* 2 */
+	margin : 0;         /* 3 */
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor : pointer;   /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+	cursor : default;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+	line-height : normal;
+}
+
+/**
+ * 1. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+	box-sizing : content-box; /* 1 */
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+	border  : 1px solid #c0c0c0;
+	margin  : 0 2px;
+	padding : .35em .625em .75em;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+	font-weight : bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+	border-collapse : collapse;
+	border-spacing  : 0;
+}
+
+td, th {
+	padding : 0;
+}

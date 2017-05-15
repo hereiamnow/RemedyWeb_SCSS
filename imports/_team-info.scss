@@ -1,0 +1,365 @@
+/**
+ * Created by Shawn Miller on 4/28/2017
+ * Filename: _team-info.css
+ * Path: /css/imports/_team-info.css
+ * Version: 1.0
+ * Description: A brief description of the Stylesheet.
+ */
+
+@import '../base/variables';
+
+//urls
+$url_0: url('/images/sprite.png');
+
+.ourteam h2 {
+	line-height : 1em;
+	text-align  : left !important;
+	margin-left : 0px !important;
+}
+
+.ourteam h3 {
+	line-height    : 1em;
+	font-size      : 18px;
+	font-weight    : bold;
+	padding-bottom : 10px;
+}
+
+.ourteam .scribetext {
+	padding-top    : 20px;
+	padding-bottom : 20px;
+	line-height    : 1.3em;
+	font-size      : 1em;
+}
+
+.ourteam hr {
+	margin-bottom : 30px;
+}
+
+.team-info .pagination ul {
+	margin     : 0;
+	padding    : 0;
+	list-style : none;
+}
+
+.meet-team {
+	padding : 65px 0 100px;
+}
+
+.meet-team .main-title {
+	margin    : 0 auto 10px;
+	max-width : 767px;
+}
+
+.meet-team .main-title h2 {
+	font-size     : 36px;
+	line-height   : 40px;
+	margin-bottom : 20px;
+}
+
+.team-info {
+	position : relative;
+}
+
+.team-info .team-carousel {
+	position : relative;
+}
+
+.team-info .mask {
+	position : relative;
+	overflow : hidden;
+	width    : 100%;
+}
+
+.team-info .slideset {
+	float  : left;
+	margin : 0 -20px;
+}
+
+.staff-title {
+	margin-top    : 40px !important;
+	margin-bottom : 10px !important;
+}
+
+.staff-title h2 {
+	margin-bottom : 0px !important;
+}
+
+.team-info .slide {
+	float   : left;
+	width   : 33.33%;
+	padding : 0 20px;
+}
+
+.team-info .slide .post {
+	overflow      : hidden;
+	border-radius : 9px;
+}
+
+.team-info .image-holder img {
+	display : block;
+}
+
+.team-info .details {
+	font-size   : 15px;
+	line-height : 24px;
+	background  : $color_picton_blue_approx;
+	color       : $white;
+	padding     : 16px 18px 23px;
+}
+
+.team-info .details h3 {
+	font-size   : 17px;
+	line-height : 20px;
+	margin      : 0 0 3px;
+}
+
+.team-info .details h3 a {
+	color           : $white;
+	text-decoration : none;
+}
+
+.team-info .details h3 a:hover {
+	color : $color_cloud_burst_approx;
+}
+
+.team-info .details .designation {
+	display : block;
+}
+
+.team-info .details p {
+	margin : 0;
+}
+
+.team-info .pagination {
+	position          : absolute;
+	left              : 50%;
+	bottom            : 0;
+	-webkit-transform : translate(-50%, 0);
+	-ms-transform     : translate(-50%, 0);
+	transform         : translate(-50%, 0);
+	z-index           : 1;
+}
+
+.team-info .pagination ul {
+	font-size      : 0;
+	line-height    : 0;
+	letter-spacing : 0;
+	text-align     : center;
+}
+
+.team-info .pagination ul li {
+	font-size      : 16px;
+	line-height    : 1.948;
+	letter-spacing : normal;
+	display        : inline-block;
+	vertical-align : top;
+	margin         : 0 5px;
+}
+
+.team-info .pagination ul li.active a,
+.team-info .pagination ul li:hover a {
+	background : $white;
+}
+
+.team-info .pagination ul li a {
+	background    : $color_concord_approx;
+	border        : 1px solid $color_concord_approx;
+	border-radius : 50%;
+	display       : block;
+	height        : 6px;
+	overflow      : hidden;
+	text-indent   : -9999px;
+	width         : 6px;
+}
+
+.team-info article.post {
+	overflow      : hidden;
+	border-radius : 15px;
+}
+
+.team-info .image-holder img {
+	width : 100%;
+}
+
+.team-info .details {
+	text-align : center;
+}
+
+.team-info .details h3 {
+	font-size : 20px;
+}
+
+.team-info .details .designation {
+	font-size : 16px;
+	margin    : 0;
+}
+
+.team-info .details .designation:nth-child(3) {
+	margin : 0 0 1.2em 0;
+}
+
+.team-info .details a.biolink {
+	font-size     : 16px;
+	font-weight   : 600;
+	color         : $white;
+	display       : inline-block;
+	background    : $color_biscay_approx;
+	border-radius : 6px;
+	padding       : 8px 19%;
+}
+
+.team-info .bx-wrapper .bx-prev,
+.team-info .bx-wrapper .bx-prev:hover {
+	width      : 42px;
+	height     : 42px;
+	top        : 28%;
+	left       : -55px;
+	background : $url_0 no-repeat -18px -125px;
+}
+
+.team-info .bx-wrapper .bx-next,
+.team-info .bx-wrapper .bx-next:hover {
+	width      : 42px;
+	height     : 42px;
+	top        : 28%;
+	right      : -70px;
+	background : $url_0 no-repeat -79px -125px;
+}
+
+@media (max-width : 979px) {
+
+	.team-info .slideset {
+		padding : 0 15px;
+		margin  : 0 -15px;
+	}
+
+	.team-info .slide {
+		padding : 0 15px;
+	}
+
+	.team-info .details {
+		padding : 11px 12px 10px;
+	}
+
+}
+
+@media only screen and (max-width : 991px) {
+
+	ul.team-overview li {
+		width : 200px !important;
+	}
+
+	.team-info {
+		margin-left : 20px;
+	}
+
+	.team-info .bx-wrapper {
+		max-width : 650px !important;
+	}
+
+	.team-info .bx-viewport {
+		height : 366px !important;
+	}
+
+	.team-info .details a.biolink {
+		font-size     : 14px;
+		margin-bottom : 10px;
+		padding       : 6px 19%;
+	}
+
+	.team-info .bx-wrapper .bx-next,
+	.team-info .bx-wrapper .bx-next:hover {
+		right : -60px;
+	}
+
+	.team-info .details h3 {
+		font-size : 13px;
+	}
+
+	.team-info .details .designation {
+		font-size : 13px;
+	}
+
+}
+
+@media (min-width : 768px) {
+
+	.team-info .mask {
+		height : auto !important;
+	}
+
+	.team-info .slideset {
+		margin : 0 -20px !important;
+	}
+
+	.team-info .slide {
+		position   : static !important;
+		width      : 33.33% !important;
+		margin-top : 30px;
+	}
+}
+
+@media only screen and (max-width : 767px) {
+
+	.team-info .bx-wrapper {
+		width : 200px !important;
+	}
+
+	.team-info .bx-viewport {
+		height : 350px !important;
+	}
+
+	.team-info .details h3 {
+		font-size : 13px;
+	}
+
+	.team-info .details .designation {
+		font-size : 13px;
+	}
+
+	.team-info .details a.biolink {
+		font-size     : 14px;
+		margin-bottom : 0px;
+		padding       : 4px 19%;
+	}
+
+}
+
+@media (max-width : 767px) {
+	.ourteam .storytext {
+		line-height : 22px;
+	}
+
+	.ourteam .main-frame .main-title {
+		padding : 0px;
+	}
+
+	.team-info .team-carousel {
+		max-width      : 269px;
+		margin         : 0 auto;
+		padding-bottom : 51px;
+	}
+
+	.team-info .mask {
+		border-radius : 9px;
+	}
+
+	.team-info .slideset {
+		margin  : 0;
+		padding : 0;
+	}
+
+	.team-info .slide {
+		width   : 100%;
+		padding : 0;
+	}
+
+	.team-info .slide .post {
+		border-radius : 0;
+	}
+
+	.team-info .details {
+		padding : 16px 19px 23px;
+	}
+
+}

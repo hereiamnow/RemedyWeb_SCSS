@@ -1,0 +1,82 @@
+/**
+ * Created by Shawn Miller on 4/28/2017
+ * Filename: _faq.scss
+ * Path: /css/imports/_faq.scss
+ * Version: 1.0
+ * Description: A brief description of the Stylesheet.
+ */
+
+@import '../base/variables';
+
+.faq-frame {
+	background : $color_picton_blue_approx;
+	padding    : 77px 0 61px;
+}
+
+.faq-frame .main-title {
+	margin-bottom : 64px;
+}
+
+.faq-frame .main-title h2 {
+	font-size      : 36px;
+	line-height    : 40px;
+	font-weight    : normal;
+	letter-spacing : 3px;
+}
+
+.faq-info .ask-btn {
+	display        : block;
+	text-align     : center;
+	letter-spacing : 0;
+	margin         : 0 auto;
+	padding        : 17px 0 0;
+}
+
+.faq-info .ask-btn .btn {
+	background     : $color_biscay_approx;
+	font-size      : 17px;
+	line-height    : 19px;
+	height         : 44px;
+	min-width      : 202px;
+	padding        : 13px 10px;
+	letter-spacing : 1px;
+}
+
+.faq-info .ask-btn .btn:hover {
+	background : $color_cloud_burst_approx;
+}
+
+@media (max-width : 767px) {
+
+/*	.faq-frame {
+		padding : 60px 0 45px;
+	}
+
+	.faq-frame .main-title {
+		display : none;
+	}*/
+
+	.faq-frame {
+		padding: 60px 0 45px;
+		.main-title {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width : 991px) {
+	.faq-info .accordion-header {
+		font-size : 20px;
+	}
+}
+
+@media only screen and (max-width : 767px) {
+	.faq-info .accordion-header {
+		font-size           : 16px;
+		background-position : right 14px;
+	}
+
+	.faq-info .accordion-body p {
+		font-size : 14px;
+	}
+}

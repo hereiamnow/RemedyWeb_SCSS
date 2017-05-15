@@ -1,0 +1,63 @@
+/**
+ * Created by Shawn Miller on 4/28/2017
+ * Filename: _ajax-contact.css
+ * Path: /css/imports/_ajax-contact.scss
+ * Version: 1.0
+ * Description: A brief description of the Stylesheet.
+ */
+
+@import '../base/variables';
+
+#ajax-contact {
+	input {
+		width: 100%;
+		font-size: 1em;
+	}
+	textarea {
+		width: 100%;
+		font-size: 1em;
+	}
+	label {
+		display: block;
+		font-size: 0.7em;
+		line-height: 2.2em;
+		text-transform: uppercase;
+	}
+	h3 {
+		margin-bottom: 0;
+	}
+	p {
+		line-height: 1em;
+	}
+}
+
+
+/*#ajax-contact input {
+	width     : 100%;
+	font-size : 1em;
+}
+
+#ajax-contact textarea {
+	width     : 100%;
+	font-size : 1em;
+
+}
+
+#ajax-contact label {
+	display        : block;
+	font-size      : 0.7em;
+	line-height    : 2.2em;
+	text-transform : uppercase;
+
+}
+
+#ajax-contact h3 {
+	margin-bottom : 0px;
+}
+
+#ajax-contact p {
+	line-height : 1em;
+}*/
+
+
+

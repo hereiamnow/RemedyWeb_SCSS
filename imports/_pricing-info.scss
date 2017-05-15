@@ -1,0 +1,254 @@
+/**
+ * Created by Shawn Miller on 4/28/2017
+ * Filename: _pricing-info.css
+ * Path: /css/imports/_pricing-info.css
+ * Version: 1.0
+ * Description: A brief description of the Stylesheet.
+ */
+
+@import '../base/variables';
+
+.pricing-info .post .list {
+	margin     : 0;
+	padding    : 0;
+	list-style : none;
+}
+
+.pricing-info {
+	margin         : 0 -35px;
+	overflow       : hidden;
+	padding-bottom : 60px;
+	margin-top     : 20px;
+}
+
+.pricing-info .col {
+	padding : 0 35px;
+	float   : left;
+	width   : 50%;
+}
+
+.pricing-info .post-frame {
+	border           : 1px solid #3abeee;
+	border-radius    : 12px;
+	overflow         : hidden;
+	background-color : #3abeee;
+	height           : 260px;
+}
+
+.pricing-info .post-frame p {
+	padding     : 40px;
+	padding-top : 0px;
+	font-size   : 18px;
+	text-align  : center;
+}
+
+.pricing-info .no-insurance {
+	border           : 2px solid #cdcdcd;
+	border-radius    : 12px;
+	overflow         : hidden;
+	background-color : $white;
+	height           : 260px;
+}
+
+.pricing-info .no-insurance p {
+	padding     : 40px;
+	padding-top : 0px;
+	font-size   : 13px;
+	text-align  : center;
+	line-height : 17px;
+}
+
+.pricing-info .post-frame h3 {
+	font-size      : 36px;
+	line-height    : 28px;
+	color          : $white;
+	margin         : 0;
+	padding        : 30px 18px 10px 40px;
+	text-transform : capitalize;
+	text-align     : center;
+}
+
+.pricing-info .no-insurance h3 {
+	font-size      : 36px;
+	line-height    : 28px;
+	color          : #3abeee;
+	margin         : 0;
+	padding        : 30px 18px 10px 40px;
+	text-transform : capitalize;
+	text-align     : center;
+}
+
+.pricing-info .post {
+	border-top : 1px solid #575757;
+	padding    : 52px 33px 54px;
+}
+
+.pricing-info .post .title {
+	font-size      : 24px;
+	line-height    : 28px;
+	display        : block;
+	letter-spacing : 3px;
+	margin-bottom  : 10px;
+}
+
+.pricing-info .post .price {
+	font-size   : 111px;
+	line-height : 111px;
+	display     : block;
+	margin      : 0 0 2px;
+}
+
+.pricing-info .post .price.range {
+	font-size : 76px;
+}
+
+.pricing-info .post .meta {
+	font-size      : 24px;
+	line-height    : 28px;
+	display        : block;
+	letter-spacing : 3px;
+}
+
+.pricing-info .post .list {
+	padding        : 11px 0 0;
+	letter-spacing : 3px;
+}
+
+.pricing-info .post .list li {
+	position : relative;
+	padding  : 0 0 0 11px;
+}
+
+.pricing-info .post .list li + li {
+	margin-top : 7px;
+}
+
+.pricing-info .post .list li:before {
+	content       : "";
+	width         : 3px;
+	height        : 3px;
+	background    : #575757;
+	border-radius : 50%;
+	position      : absolute;
+	top           : 14px;
+	left          : 2px;
+}
+
+.pricing-info .insurance h3 {
+	background     : #3abeee;
+	letter-spacing : 3px;
+}
+
+.pricing-info .insurance .price,
+.pricing-info .insurance .meta {
+	color : #3abeee;
+}
+
+.pricing-info .no-insurance h3 {
+	background : $white;
+}
+
+.pricing-info .no-insurance .price,
+.pricing-info .no-insurance .meta {
+	color : #972d98;
+}
+
+@media (max-width : 979px) {
+
+	.pricing-info {
+		padding : 0 15px 40px;
+		margin  : 0 -20px;
+	}
+
+	.pricing-info .col {
+		padding : 0 20px;
+	}
+
+	.pricing-info .post {
+		padding : 20px 17px 22px;
+	}
+
+}
+
+@media (max-width : 767px) {
+
+	.pricing-info .post-frame {
+		border           : 1px solid #3abeee;
+		border-radius    : 12px;
+		overflow         : hidden;
+		background-color : #3abeee;
+		height           : 320px;
+
+	}
+
+	.pricing-info .no-insurance {
+		border           : 2px solid #cdcdcd;
+		border-radius    : 12px;
+		overflow         : hidden;
+		background-color : $white;
+		height           : 320px;
+	}
+
+	.pricing-info .no-insurance p {
+		font-size   : 13px;
+		line-height : 17px;
+	}
+
+	.pricing-info {
+		margin  : 0;
+		padding : 0 0 40px;
+	}
+
+	.pricing-info .col {
+		width   : 100%;
+		padding : 0;
+	}
+
+	.pricing-info .col + .col {
+		margin-top : 20px;
+	}
+
+	.pricing-info .post-frame h3 {
+		padding        : 40px;
+		padding-bottom : 10px;
+	}
+
+	.pricing-info .post .title {
+		font-size      : 18px;
+		line-height    : 22px;
+		letter-spacing : 1px;
+	}
+
+	.pricing-info .post .price {
+		font-size   : 77px;
+		line-height : 100px;
+	}
+
+	.pricing-info .post .price.range {
+		font-size : 55px;
+	}
+
+	.pricing-info .post .meta {
+		font-size      : 20px;
+		line-height    : 24px;
+		letter-spacing : 1px;
+	}
+
+	.pricing-info .post .list {
+		letter-spacing : 1px;
+		line-height    : 20px;
+	}
+
+	.pricing-info .post .list li + li {
+		margin-top : 15px;
+	}
+
+	.pricing-info .post .list li:before {
+		top : 9px;
+	}
+
+	.pricing-info .insurance h3 {
+		letter-spacing : 1px;
+	}
+
+}

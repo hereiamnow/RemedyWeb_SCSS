@@ -1,0 +1,90 @@
+/**
+ * Created by Shawn Miller on 4/28/2017
+ * Filename: _img-sprite.css
+ * Path: css/imports/_img-sprite.css
+ * Version: 1.0
+ * Description: A brief description of the Stylesheet.
+ */
+
+.icon {
+  display    : inline-block;
+  background : url('/images/sprite.png') no-repeat;
+}
+
+.icon-facebook {
+  width               : 24px;
+  height              : 25px;
+  background-position : -187px -20px;
+}
+
+.icon-circle-facebook {
+  width               : 31px;
+  height              : 31px;
+  background-position : -14px -70px;
+}
+
+.icon-linkedin {
+  width               : 26px;
+  height              : 25px;
+  background-position : -242px -16px;
+}
+
+.icon-circle-linkedin {
+  width               : 31px;
+  height              : 31px;
+  background-position : -70px -71px;
+}
+
+.icon-twitter {
+  width               : 26px;
+  height              : 23px;
+  background-position : -130px -20px;
+}
+
+.icon-circle-twitter {
+  width               : 31px;
+  height              : 31px;
+  background-position : -125px -71px;
+}
+
+.icon-circle-instagram {
+  width               : 31px;
+  height              : 31px;
+  background-position : -183px -70px;
+}
+
+.icon-circle-pinterest {
+  width               : 31px;
+  height              : 31px;
+  background-position : -241px -71px;
+}
+
+.icon-green-check {
+  width               : 25px;
+  height              : 25px;
+  background-position : -130px -130px;
+}
+
+.icon-chevron-left {
+  width               : 14px;
+  height              : 27px;
+  background-position : -20px -16px;
+}
+
+.icon-chevron-right {
+  width               : 14px;
+  height              : 27px;
+  background-position : -78px -16px;
+}
+
+.icon-chevron-left-light {
+  width               : 14px;
+  height              : 27px;
+  background-position : -20px -186px;
+}
+
+.icon-chevron-right-light {
+  width               : 14px;
+  height              : 27px;
+  background-position : -78px -186px;
+}

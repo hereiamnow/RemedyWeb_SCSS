@@ -1,0 +1,98 @@
+/**
+ * Created by Shawn Miller on 5/10/2017 12:42 AM
+ * Filename: _variables.scss
+ * Path: /_compass/scss/base/_variables.scss
+ * Version: 1.0
+ * Description: A brief description of the SCSS.
+ */
+
+// Color calculator - http://razorjam.github.io/sasscolourfunctioncalculator/
+// Color names - http://name-of-color.com/
+
+// Colors
+$white: #fff;
+$black : #333;
+$gallery : #efefef;
+$color_gallery_approx : #ededed;
+$color_cod_gray_approx: #0a0a0a;
+$color_mine_shaft_approx: #333;
+$color_tuatara_approx : #393939;
+$color_storm_dust_approx : #666;
+$color_dove_gray_approx: #6f6f70;
+$color_boulder_approx : #787879;
+$color_concord_approx: #7d7d7d;
+$color_gray_approx : #808081;
+$color_mountain_mist_approx: #999;
+$color_silver_chalice_approx : #ababab;
+$color_celeste_approx : #d0d0d0;
+$color_mercury_approx : #e3e4e6;
+$color_apple_approx: #4fc438;
+$color_vivid_violet_approx : #972d98; //TODO: Convert RGB Colors
+$color_seance_approx : #7e147f;
+$color_ronchi_approx: #eebb4d;
+$color_casablanca_approx: #f5b945;//TODO: Convert RGB Colors
+$color_golden_grass_approx: #dca02c;
+$color_mandy_approx : #e6455c;
+$color_brick_red_approx : #cd2c43;
+$color_cloud_burst_approx: #1f2b5c;
+$color_biscay_approx : #213465;
+$color_dodger_blue_approx: #39f;
+$color_curious_blue_approx : #21a5d5;
+$color_cerulean_approx : #13abe2;
+$color_picton_blue_approx : #3abeee;
+$color_rangoon_green_approx : #191919; //TODO: Convert RGB Colors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$base-font-sans-serif: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$base-font-serif: 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
+
+// Body
+$base-text-color: $white !default;
+$base-background-color: $color_picton_blue_approx !default;
+$base-font-size: 16px !default;
+$base-line-height: 1.948 !default;
+$base-font-family: $base-font-sans-serif !default;
+$base-min-width: 320px;
+$vertical-rhythm: ($base-line-height * 1em);
+
+// Links
+$base-link-color: $color_cloud_burst_approx;
+
+// Buttons
+$btn-color: $white !default;
+$btn-background: $color_mine_shaft_approx !default;
+$btn-padding: 0.4em 0.7em !default;
+$btn-font-size: inherit !default;
+
+// Forms
+$form-element-padding: $btn-padding !default;
+$form-element-border-color: $color_mountain_mist_approx !default;
+$form-element-focus-border-color: $color_mine_shaft_approx !default;
+$placeholder-color: $color_mountain_mist_approx !default;
+
+// Headers
+$h1-font-size: 30px !default;
+$h2-font-size: 27px !default;
+$h3-font-size: 24px !default;
+$h4-font-size: 21px !default;
+$h5-font-size: 17px !default;
+$h6-font-size: 15px !default;
+
+$headings-font-family: inherit !default;
+$headings-color: inherit !default;
+
+// Animation
+$animation-speed: 0.3s;

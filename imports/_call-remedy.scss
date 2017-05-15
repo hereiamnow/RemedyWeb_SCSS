@@ -1,0 +1,138 @@
+/**
+ * Created by Shawn Miller on 4/28/2017
+ * Filename: _call-remedy.scss
+ * Path: /css/imports/_call-remedy.scss
+ * Version: 1.0
+ * Description: A brief description of the Stylesheet.
+ */
+
+@import '../base/variables';
+
+
+/*.call-remedy {
+	padding    : 72px 0 50px;
+	text-align : center;
+}
+
+.call-remedy .main-title {
+	margin-bottom : 65px;
+}*/
+
+.call-remedy {
+	padding: 72px 0 50px;
+	text-align: center;
+	.main-title {
+		margin-bottom: 65px;
+	}
+}
+
+
+
+
+
+.call-remedy .call-info {
+	font-size      : 0;
+	line-height    : 0;
+	letter-spacing : -4px;
+	text-align     : center;
+	margin         : 0 -20px;
+}
+
+.call-remedy .call-info .col {
+	font-size      : 16px;
+	line-height    : 1.948;
+	letter-spacing : normal;
+	display        : inline-block;
+	vertical-align : top;
+	width          : 20%;
+	padding        : 0 20px;
+}
+
+
+
+
+.call-remedy .call-info .image-holder {
+	margin : 0 0 41px;
+}
+
+.call-remedy .call-info .image-holder img {
+	vertical-align : top;
+	border-radius  : 50%;
+}
+
+.call-remedy .call-info .text-wrap {
+	font-size   : 15px;
+	line-height : 31px;
+	text-align  : center;
+	overflow    : hidden;
+
+}
+
+.call-remedy .call-info .text-wrap h3 {
+	font-size   : 24px;
+	line-height : 31px;
+	color       : #666;
+	margin      : 0 0 2px;
+	font-family : 'Klinic Slab';
+}
+
+@media (max-width : 979px) {
+
+	.call-remedy .call-info {
+		padding : 0 15px;
+		margin  : 0 -10px;
+	}
+
+	.call-remedy .call-info .col {
+		padding : 0 10px;
+	}
+
+}
+
+@media (max-width : 767px) {
+
+/*	.call-remedy {
+		padding : 37px 0 0;
+	}
+
+	.call-remedy .main-title {
+		margin-bottom : 34px;
+	}*/
+
+	.call-remedy {
+		padding: 37px 0 0;
+		.main-title {
+			margin-bottom: 34px;
+		}
+	}
+
+	.call-remedy .main-title h2 {
+		line-height : 34px;
+	}
+
+	.call-remedy .call-info {
+		padding : 0;
+		margin  : 0 0 30px;
+	}
+
+	.call-remedy .call-info .col {
+		width : 100%;
+	}
+
+	.call-remedy .call-info .col + .col {
+		margin-top : 35px;
+	}
+
+	.call-remedy .call-info .image-holder {
+		margin : 0 0 24px;
+	}
+
+	.call-remedy .call-info .text-wrap {
+		font-size : 14px;
+	}
+
+	.call-remedy .call-info .text-wrap h3 {
+		font-weight : normal;
+	}
+
+}

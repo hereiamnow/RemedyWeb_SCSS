@@ -1,0 +1,96 @@
+/**
+ * Created by Shawn Miller on 4/28/2017
+ * Filename: _typography.css
+ * Path: /css/imports/_typography.css
+ * Version: 1.0
+ * Description: A brief description of the Stylesheet.
+ */
+
+@import '../base/variables';
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+	font-family : inherit;
+	font-weight : bold;
+	margin      : 0 0 .5em;
+	color       : inherit;
+}
+
+h1, .h1 {
+	font-size : 30px;
+}
+
+h2, .h2 {
+	font-size : 27px;
+}
+
+h3, .h3 {
+	font-size : 24px;
+}
+
+h4, .h4 {
+	font-size : 21px;
+}
+
+h5, .h5 {
+	font-size : 17px;
+}
+
+h6, .h6 {
+	font-size : 15px;
+}
+
+/*h2.normal {
+	font-style  : normal;
+	font-size   : 24px !important;
+	font-weight : normal;
+	margin      : 0 auto;
+}
+
+h2.title {
+	color: $color_picton_blue_approx;
+}*/
+
+h2 {
+	&.normal {
+		font-style: normal;
+		font-size: 24px !important;
+		font-weight: normal;
+		margin: 0 auto;
+	}
+	&.title {
+		color: $color_picton_blue_approx;
+	}
+}
+
+p {
+	margin : 0 0 1em;
+}
+
+.ital {
+	font-style : italic;
+}
+
+/*
+a {
+	color : #1f2b5c;
+}
+
+a:hover, a:focus {
+	text-decoration : none;
+}*/
+
+a {
+	color: $color_cloud_burst_approx;
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus {
+		text-decoration: none;
+	}
+}

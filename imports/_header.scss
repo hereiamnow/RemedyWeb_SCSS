@@ -1,0 +1,464 @@
+/**
+ * Created by Shawn Miller on 4/28/2017
+ * Filename: _header.css
+ * Path: /css/imports/_header.css
+ * Version: 1.0
+ * Description: A brief description of the Stylesheet.
+ */
+@import '../base/variables';
+
+/* Header Styles and Nav Group */
+#header {
+  background : $white;
+  position   : fixed;
+  width      : 100%;
+  z-index    : 99999;
+  top        : 0;
+  left       : 0;
+}
+
+#header .container {
+  max-width : 980px;
+  margin    : 0 auto;
+  padding   : 10px 15px;
+}
+
+#header .logo-holder {
+  float   : left;
+  padding : 10px 0 0;
+  /*border  : 1px solid black;*/
+}
+
+#header .logo {
+  float : left;
+  /*width  : 159px;*/
+  /*height : auto;*/
+}
+
+#header .logo img {
+  /*width   : 159px;*/
+  width   : 166px;
+  height  : auto;
+  display : block;
+}
+
+#header .nav-group {
+  float      : none;
+  text-align : center;
+  padding    : 0;
+}
+
+#header .appointment-btn {
+  float          : right;
+  display        : inline-block;
+  vertical-align : top;
+  line-height    : 1.948;
+  font-size      : 13px;
+
+  letter-spacing : 1px;
+
+}
+
+#header .appointment-btn .btn {
+  padding    : 11px 20px;
+  width      : auto;
+  height     : auto;
+  min-height : 38px;
+}
+
+.nav-drop > ul {
+  margin     : 0;
+  padding    : 0;
+  list-style : none;
+}
+
+#header .container:after,
+.nav-drop > ul:after {
+  content : "";
+  display : block;
+  clear   : both;
+}
+
+/* main page navigation style */
+#nav {
+  display        : inline-block;
+  vertical-align : top;
+  font-size      : 16px;
+  line-height    : 1.948;
+  letter-spacing : normal;
+  /*width          : 64%;*/
+}
+
+/* mobile nav opener style */
+.nav-opener {
+  display : none;
+}
+
+.nav-drop {
+  text-transform : uppercase;
+  overflow       : hidden;
+  padding        : 27px 0 0;
+  display        : inline-block;
+  float          : none;
+  /*border         : 1px solid black;*/
+}
+
+.nav-drop > ul {
+  font-size      : 12px;
+  line-height    : 14px;
+  font-weight    : bold;
+  float          : right;
+  letter-spacing : 1px;
+  margin         : 0;
+}
+
+.nav-drop > ul > li:first-child {
+  margin-left : 0;
+}
+
+.nav-drop > ul > li {
+  float    : left;
+  margin   : 0 0 5px 22px;
+  position : relative;
+}
+
+.nav-drop > ul > li:hover > a,
+.nav-drop > ul > li.active > a {
+  color : #1f2b5c;
+}
+
+.nav-drop > ul > li > a {
+  text-decoration : none;
+  color           : $color_dove_gray_approx;
+}
+
+.schedule {
+  float           : right;
+  flex-direction  : column;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  /*border          : 1px solid black;*/
+}
+
+#nav-phone {
+  color          : #6f6f70;
+  font-size      : 12px;
+  line-height    : 14px;
+  font-weight    : bold;
+  letter-spacing : 1px;
+  margin-top     : 10px;
+  margin-left    : 0;
+  margin-bottom  : 0;
+}
+
+#nav-phone a {
+  color : #6f6f70;
+}
+
+#nav-phone span {
+
+  font-size : 10px;
+}
+
+#business #nav-phone a {
+  color : $white;
+}
+
+@media (max-width : 979px) {
+
+  a {
+
+    text-decoration-line : none;
+  }
+  #header .logo-holder {
+    padding : 12px 0 0;
+  }
+
+  #header .nav-group {
+    width : 78.5907859079%;
+    float : right;
+  }
+
+  #header .appointment-btn {
+    letter-spacing : 0;
+  }
+
+  #header .appointment-btn .btn {
+    padding : 11px 10px;
+  }
+
+  #nav {
+    line-height : 0;
+    /*width       : 60%;*/
+    width       : 70%;
+  }
+
+  .nav-drop > ul > li {
+    margin-top    : 0;
+    margin-right  : 0;
+    margin-left   : 20px;
+    margin-bottom : 25px;
+  }
+
+  .nav-drop > ul > li:hover > a,
+  .nav-drop > ul > li.active > a {
+    background : $white;
+    color      : #1f2b5c;
+  }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+  a {
+    text-decoration-line : none;
+  }
+
+  #header .container {
+    padding-bottom : 8px;
+  }
+
+  #nav {
+    line-height : 0;
+    /*width       : 54%;*/
+    width       : 70%;
+
+    .nav-drop {
+      /*padding-top : 12px;*/
+      padding-top : 14px;
+    }
+  }
+
+  #nav-phone {
+    font-size      : 11px;
+    line-height    : 14px;
+    font-weight    : bold;
+    letter-spacing : 0;
+    margin-top     : 4px;
+  }
+
+
+/*  .nav-drop > ul {
+    font-size : 11px !important;
+
+    > li > a {
+      font-size      : 11px !important;
+
+      //recover space in header
+      letter-spacing : 0; //added
+
+    }
+  }*/
+
+
+
+
+  .nav-drop > ul {
+    font-size: 11px !important;
+    line-height: 21px;
+    li {
+      white-space: nowrap;
+      float:none;
+      display: inline;
+    }
+    > li > a {
+      font-size: 11px !important;
+      letter-spacing: 0;
+    }
+  }
+
+
+
+
+
+  #header .logo {
+    float  : none;
+    width  : 147px;
+    height : auto;
+  }
+
+  #header {
+
+    .appointment-btn {
+      width          : auto;
+      letter-spacing : 0;
+      margin-top     : 2px;
+
+      .btn {
+        padding : 11px 10px;
+      }
+    }
+
+    .nav-phone {
+      font-size : 10px !important;
+    }
+  }
+}
+
+@media (max-width : 767px) {
+  #header .container {
+    padding-top    : 8px;
+    padding-right  : 10px;
+    padding-left   : 10px;
+    padding-bottom : 9px;
+    position       : relative;
+  }
+
+  #header .logo-holder {
+    padding : 0;
+  }
+
+  #header .logo {
+    width  : 85px;
+    height : auto;
+  }
+
+  #header .nav-group {
+    padding : 5px 0 0;
+    width   : 100px;
+  }
+
+  #header .appointment-btn {
+    display : none;
+  }
+
+  #header .nav-phone {
+    display : none;
+  }
+
+  #nav {
+    padding : 0;
+  }
+
+  #nav.nav-active .nav-drop {
+    max-height : 4000px;
+  }
+
+  #nav .nav-drop {
+    text-align         : center;
+    max-height         : 0;
+    -webkit-transition : all, .25s, linear;
+    transition         : all, .25s, linear;
+  }
+
+  .nav-drop {
+    max-width : none;
+    float     : none;
+    left      : 0;
+    position  : absolute;
+    right     : 0;
+    top       : 100%;
+    z-index   : 999;
+    padding   : 0;
+  }
+
+  .nav-drop > ul {
+    -webkit-transform  : translateY(-100%);
+    -ms-transform      : translateY(-100%);
+    transform          : translateY(-100%);
+    -webkit-transition : all .25s linear;
+    transition         : all .25s linear;
+    background         : #37c1f0;
+    float              : none;
+    text-align         : left;
+    margin             : 0;
+  }
+
+  .nav-drop > ul > li {
+    float  : none;
+    margin : 0;
+  }
+  .nav-drop > ul > li:first-child {
+    margin-left : 0;
+  }
+  .nav-drop > ul > li > a {
+    display        : block;
+    padding-top    : 14px;
+    padding-right  : 10px;
+    padding-left   : 10px;
+    padding-bottom : 14px;
+    color          : $white;
+    position       : relative;
+  }
+
+  .nav-active .nav-opener:after,
+  .nav-active .nav-opener:before {
+    -webkit-transform : rotate(45deg);
+    -ms-transform     : rotate(45deg);
+    transform         : rotate(45deg);
+    top               : 5px;
+    left              : 0;
+    right             : 0;
+    background        : #1f2b5c;
+  }
+
+  .nav-active .nav-opener:after {
+    -webkit-transform : rotate(-45deg);
+    -ms-transform     : rotate(-45deg);
+    transform         : rotate(-45deg);
+  }
+
+  .nav-active .nav-opener span {
+    opacity : 0;
+  }
+
+  .nav-active .nav-drop > ul {
+    -webkit-transform : translateY(0);
+    -ms-transform     : translateY(0);
+    transform         : translateY(0);
+  }
+
+  .nav-opener {
+    overflow    : hidden;
+    text-indent : 101%;
+    white-space : nowrap;
+    display     : block;
+    float       : right;
+    width       : 16px;
+    height      : 12px;
+    text-align  : left;
+    position    : relative;
+  }
+
+  .nav-opener:before,
+  .nav-opener:after,
+  .nav-opener span {
+    background         : #3abeee;
+    position           : absolute;
+    top                : 5px;
+    left               : 0;
+    right              : 0;
+    height             : 2px;
+    -webkit-transition : all, .2s, linear;
+    transition         : all, .2s, linear;
+  }
+
+  .nav-opener:before,
+  .nav-opener:after {
+    content : "";
+    top     : 0;
+  }
+
+  .nav-opener:after {
+    top : 10px;
+  }
+
+  .nav-opener:hover:before,
+  .nav-opener:hover:after,
+  .nav-opener:hover span {
+    background : #1f2b5c;
+  }
+
+}
+
+@media only screen and (max-width : 480px) {
+  #header .nav-group {
+    width : 16px;
+  }
+  #nav {
+    width : 18px;
+  }
+}
+
+

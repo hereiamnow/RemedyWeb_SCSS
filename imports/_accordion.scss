@@ -1,0 +1,106 @@
+/**
+ * Created by Shawn Miller on 4/28/2017
+ * Filename: _accordion.css
+ * Path: /css/imports/_accordion.scss
+ * Version: 1.0
+ * Description: A brief description of the Stylesheet.
+ */
+@import '../base/variables';
+
+//urls
+$url_0 : url('/images/accordion-opened.png');
+$url_1 : url('/images/accordion-opened-light.png');
+
+.accordion-group {
+	margin : 0 0 3em 0;
+}
+.accordion-body {
+	display    : none;
+	padding    : 15px 0 0;
+	background : none;
+	margin     : 4px 0;
+	> * > .accordion-body {
+		background-color : $color_gallery_approx;
+		margin           : 0;
+	}
+}
+.accordion-header {
+	background    : $color_picton_blue_approx $url_0 no-repeat 99% center;
+	margin        : 0;
+	color         : $color_biscay_approx;
+	padding       : 8px 0;
+	cursor        : pointer;
+	border-bottom : 1px $color_biscay_approx solid;
+	position      : relative;
+	&.open {
+		background    : $color_picton_blue_approx $url_1 no-repeat 99% center;
+		color         : $white;
+		border-bottom : 1px $white solid;
+		&:last-of-type {
+			margin-bottom : 4px;
+		}
+	}
+	&:last-of-type {
+		margin-bottom : 0;
+	}
+	span {
+		position    : absolute;
+		right       : 6px;
+		top         : 6px;
+		background  : $white;
+		padding     : 2px 5px;
+		color       : $black;
+		font-weight : normal;
+	}
+}
+/*.accordion-group {
+	margin : 0 0 3em 0;
+}
+
+.accordion-body {
+	display    : none;
+	padding    : 15px 0 0 0;
+	background : none;
+	margin     : 4px 0;
+}
+
+.accordion-body > * > .accordion-body {
+	background-color : #ededed;
+	margin           : 0;
+}
+
+.accordion-header {
+	background    : #3abeee url("/images/accordion-opened.png") no-repeat 99% center;
+	margin        : 0;
+	color         : #213465;
+	padding       : 8px 0 8px 0;
+	cursor        : pointer;
+	border-bottom : 1px #213465 solid;
+	position      : relative;
+}
+
+.accordion-header.open {
+	background    : #3abeee url("/images/accordion-opened-light.png") no-repeat 99% center;
+	color         : $white;
+	border-bottom : 1px $white solid;
+}
+
+.accordion-header:last-of-type {
+	margin-bottom : 0
+}
+
+.accordion-header.open:last-of-type {
+	margin-bottom : 4px
+}
+
+.accordion-header span {
+	position    : absolute;
+	right       : 6px;
+	top         : 6px;
+	background  : $white;
+	padding     : 2px 5px;
+	color       : $black;
+	font-weight : normal;
+}*/
+
+

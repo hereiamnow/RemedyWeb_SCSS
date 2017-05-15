@@ -1,0 +1,70 @@
+/**
+ * Created by Shawn Miller on 4/28/2017
+ * Filename: _table.css
+ * Path: /css/imports/_table.css
+ * Version: 1.0
+ * Description: A brief description of the Stylesheet.
+ */
+
+@import '../base/variables';
+
+/*
+    Table Primary
+*/
+.table-primary {
+	font-size : 10px;
+}
+
+.table-primary .table-header-group {
+	font-size   : 1.75em;
+	font-weight : 600;
+	color       : #1e2e61;
+	text-align  : center;
+	line-height : 1.3em;
+}
+
+.table-primary .table-header-group .row .cell {
+	width : 90px;
+}
+
+.table-primary .table-header-group .row .cell:first-child,
+.table-primary .table-row-group .row .cell:first-child {
+	max-width : 110px;
+}
+
+.table-primary .table-row-group .row:nth-child(odd) {
+	background : #f5f6f8;
+}
+
+.table-primary .cell {
+	vertical-align : middle;
+	padding        : 10px;
+}
+
+.table-primary .table-header-group img {
+	width          : 88px;
+	vertical-align : middle;
+}
+
+.table-primary .table-row-group .cell {
+	font-size   : 1.6em;
+	font-weight : 600;
+	line-height : 1.3em;
+	color       : #666666;
+	text-align  : center;
+}
+
+.table-primary .table-row-group .cell:first-child {
+	text-align : left;
+}
+
+@media only screen and (max-width : 767px) {
+	.table-primary {
+		font-size : 8px;
+	}
+
+	.table-primary .icon-green-check {
+		transform : scale(0.8, 0.8);
+	}
+
+}

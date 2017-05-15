@@ -1,0 +1,453 @@
+/**
+ * Created by Shawn Miller on 4/28/2017
+ * Filename: _carousel.scss
+ * Path: /css/imports/_carousel.scss
+ * Version: 1.0
+ * Description: A brief description of the Stylesheet.
+ */
+
+@import '../base/variables';
+
+.main-carousel {
+	position : relative;
+}
+
+.main-carousel .pagination ul {
+	margin     : 0;
+	padding    : 0;
+	list-style : none;
+}
+
+
+
+.main-carousel .mask {
+	position : relative;
+	overflow : hidden;
+	width    : 100%;
+}
+
+.main-carousel .slideset {
+	width : 99999px;
+	float : left;
+}
+
+.main-carousel .slide {
+	width    : 100%;
+	float    : left;
+	height   : 627px;
+	position : relative;
+}
+
+.main-carousel .slide.active {
+	z-index : 1;
+}
+
+.main-carousel .image-holder:before {
+	position : absolute;
+	top      : 0;
+	left     : 0;
+	right    : 0;
+	bottom   : 0;
+	z-index  : 1;
+	content  : "";
+}
+
+.main-carousel .container {
+	max-width   : 500px;
+	margin      : 0 auto;
+	padding     : 0 15px;
+	height      : 100%;
+	white-space : nowrap;
+	text-align  : center;
+}
+
+.main-carousel .container:after {
+	display        : inline-block;
+	vertical-align : middle;
+	content        : "";
+	height         : 100%;
+	width          : 1px;
+}
+
+.main-carousel .caption {
+	display        : inline-block;
+	vertical-align : middle;
+	white-space    : normal;
+	text-shadow: 1px 1px 1px rgba(25, 25, 25, 1);
+}
+
+.main-carousel .caption .title {
+	text-transform: uppercase;
+	font-size   : 36px;
+	line-height : 49px;
+	font-weight : bold;
+}
+
+.main-carousel .btn-next,
+.main-carousel .btn-prev {
+	font-size       : 0;
+	line-height     : 0;
+	position        : absolute;
+	top             : 50%;
+	margin-top      : -68px;
+	color           : #b0a9a6;
+	z-index         : 1;
+	text-decoration : none;
+}
+
+.main-carousel .btn-next:hover,
+.main-carousel .btn-prev:hover {
+	opacity : .7;
+}
+
+.main-carousel .btn-next [class^="icon-"],
+.main-carousel .btn-prev [class^="icon-"] {
+	font-size   : 27px;
+	line-height : 1;
+	cursor      : pointer;
+}
+
+.main-carousel .btn-prev {
+	left : 68px;
+}
+
+.main-carousel .btn-next {
+	right : 68px;
+}
+
+.main-carousel .pagination {
+	position          : absolute;
+	left              : 50%;
+	bottom            : 62px;
+	-webkit-transform : translate(-50%, 0);
+	-ms-transform     : translate(-50%, 0);
+	transform         : translate(-50%, 0);
+	z-index           : 1;
+}
+
+.main-carousel .pagination ul {
+	font-size      : 0;
+	line-height    : 0;
+	letter-spacing : 0;
+	text-align     : center;
+	padding        : 0 7px 0 0;
+}
+
+.main-carousel .pagination ul li {
+	font-size      : 16px;
+	line-height    : 1.948;
+	letter-spacing : normal;
+	display        : inline-block;
+	vertical-align : top;
+	padding        : 0 5px;
+}
+
+.main-carousel .pagination ul li.active a {
+	background : #37c1f0;
+}
+
+.main-carousel .pagination ul li a {
+	background    : $white;
+	border-radius : 50%;
+	display       : block;
+	height        : 6px;
+	overflow      : hidden;
+	text-indent   : -9999px;
+	width         : 6px;
+}
+
+.main-carousel .pagination ul li a:hover {
+	opacity : .7;
+}
+
+.main-carousel .appointment-btn {
+	/*bottom     : 40px;*/
+	bottom     : 120px;
+	left       : 0;
+	position   : absolute;
+	z-index    : 1;
+	width      : 100%;
+	text-align : center;
+	padding    : 0 20px;
+}
+
+.main-carousel .appointment-btn .btn {
+	line-height    : 15px;
+	font-weight    : bold;
+	letter-spacing : 1px;
+	min-width      : 190px;
+	width          : auto;
+}
+
+.main-carousel .appointment-btn .btn:hover {
+	background: #f5b945;
+	text-decoration: none;
+}
+
+.main-carousel2 {
+	position : relative;
+}
+
+.main-carousel2 .mask {
+	position : relative;
+	overflow : hidden;
+	width    : 100%;
+}
+
+.main-carousel2 .slideset {
+	width : 99999px;
+	float : left;
+}
+
+.main-carousel2 .slide {
+	width    : 100%;
+	float    : left;
+	height   : 280px;
+	position : relative;
+}
+
+.main-carousel2 .slide.active {
+	z-index : 1;
+}
+
+.main-carousel2 .image-holder:before {
+	background : rgba(18, 18, 19, .5);
+	position   : absolute;
+	top        : 0;
+	left       : 0;
+	right      : 0;
+	bottom     : 0;
+	z-index    : 1;
+	content    : "";
+}
+
+.main-carousel2 .image-holder:before {
+	background : rgba(255, 255, 255, 1);
+	position   : absolute;
+	top        : 0;
+	left       : 0;
+	right      : 0;
+	bottom     : 0;
+	z-index    : 1;
+	content    : "";
+}
+
+.main-carousel2 .container {
+	max-width   : 500px;
+	max-height  : 200px;
+	margin      : 0 auto;
+	padding     : 0 15px;
+	height      : 100%;
+	white-space : nowrap;
+	text-align  : center;
+}
+
+.main-carousel2 .container:after {
+	display        : inline-block;
+	vertical-align : middle;
+	content        : "";
+	height         : 100%;
+	width          : 1px;
+}
+
+.main-carousel2 .caption {
+	display        : inline-block;
+	vertical-align : middle;
+	white-space    : normal;
+	color          : #000000;
+}
+
+.main-carousel2 .caption .title {
+	font-size   : 22px;
+	line-height : 24px;
+	font-weight : normal;
+}
+
+.main-carousel2 .caption img#kvue {
+	display : block;
+	width   : 154px;
+	margin  : 0 auto;
+}
+
+.main-carousel2 .caption img#ADJ {
+	display : block;
+	width   : 271px;
+	margin  : 0 auto;
+}
+
+.main-carousel2 .caption strong {
+	font-family : 'Gotham HTF';
+	display     : block;
+	margin-top  : 10px;
+	line-height : 1.2em !important;
+}
+
+.main-carousel2 .caption p {
+	line-height : 3.0em !important;
+}
+
+.main-carousel2 .btn-next,
+.main-carousel2 .btn-prev {
+	font-size       : 0;
+	line-height     : 0;
+	position        : absolute;
+	top             : 50%;
+	margin-top      : -68px;
+	color           : #b0a9a6;
+	z-index         : 1;
+	text-decoration : none;
+}
+
+.main-carousel2 .btn-next:hover,
+.main-carousel2 .btn-prev:hover {
+	opacity : .7;
+}
+
+.main-carousel2 .btn-next [class^="icon-"],
+.main-carousel2 .btn-prev [class^="icon-"] {
+	font-size   : 27px;
+	line-height : 1;
+	cursor      : pointer;
+}
+
+.main-carousel2 .btn-prev {
+	left : 68px;
+}
+
+.main-carousel2 .btn-next {
+	right : 68px;
+}
+
+.main-carousel2 .pagination {
+	position          : absolute;
+	left              : 50%;
+	bottom            : 35px;
+	-webkit-transform : translate(-50%, 0);
+	-ms-transform     : translate(-50%, 0);
+	transform         : translate(-50%, 0);
+	z-index           : 1;
+}
+
+.main-carousel2 .pagination ul {
+	font-size      : 0;
+	line-height    : 0;
+	letter-spacing : 0;
+	text-align     : center;
+	padding        : 0 7px 0 0;
+}
+
+.main-carousel2 .pagination ul li {
+	font-size      : 16px;
+	line-height    : 1.948;
+	letter-spacing : normal;
+	display        : inline-block;
+	vertical-align : top;
+	padding        : 0 5px;
+}
+
+.main-carousel2 .pagination ul li.active a {
+	background : #37c1f0;
+}
+
+.main-carousel2 .pagination ul li a {
+	background    : #b0a9a6;
+	border-radius : 50%;
+	display       : block;
+	height        : 6px;
+	overflow      : hidden;
+	text-indent   : -9999px;
+	width         : 6px;
+}
+
+.main-carousel2 .pagination ul li a:hover {
+	opacity : .7;
+}
+
+.main-carousel2 .appointment-btn {
+	bottom     : 71px;
+	left       : 0;
+	position   : absolute;
+	z-index    : 1;
+	width      : 100%;
+	text-align : center;
+	padding    : 0 20px;
+}
+
+.main-carousel2 .appointment-btn .btn {
+	display        : inline-block;
+	vertical-align : top;
+	font-size      : 13px;
+	line-height    : 15px;
+	height         : 37px;
+	font-weight    : bold;
+	padding        : 11px 10px;
+	letter-spacing : 1px;
+	min-width      : 190px;
+	width          : auto;
+}
+
+@media (max-width : 767px) {
+
+	.main-carousel .slide {
+		height : 240px;
+	}
+
+	.main-carousel .caption {
+		vertical-align : top;
+		padding-top    : 56px;
+		line-height    : 24px;
+	}
+
+	.main-carousel .caption .title {
+		font-size   : 18px;
+		line-height : 24px;
+		font-weight : normal;
+	}
+
+	.main-carousel .caption p {
+		/*display : none;*/
+	}
+
+	.main-carousel .btn-next,
+	.main-carousel .btn-prev {
+		display : none;
+	}
+
+	.main-carousel2 .btn-next,
+	.main-carousel2 .btn-prev {
+		display : none;
+	}
+
+	.main-carousel2 .caption .title {
+		font-size : 18px;
+	}
+
+	.main-carousel2 .caption p {
+		padding-top : 6px;
+		line-height : 1.8em;
+	}
+
+	.main-carousel .pagination {
+		bottom : 21px;
+	}
+
+	.main-carousel .pagination ul {
+		padding : 0;
+	}
+
+	.main-carousel .pagination ul li {
+		padding : 0 4px 0 3px;
+	}
+
+	.main-carousel .pagination ul li a {
+		width  : 5px;
+		height : 5px;
+	}
+
+}
+
+@media only screen and (max-width : 480px) {
+	.main-carousel .appointment-btn {
+		bottom: 26px;
+	}
+}
